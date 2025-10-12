@@ -1,10 +1,14 @@
 
 import { GoogleGenAI, Chat } from '@google/genai';
 
-const API_KEY = process.env.API_KEY;
+// WARNING: This is for demonstration purposes only.
+// Do not expose your API key in client-side code in a production environment.
+// It is highly recommended to use a backend proxy to handle API calls securely.
+const API_KEY = 'AIzaSyBqs5glLfIkMLl38OCB2Vf2VFph7-j_Uws';
+
 
 if (!API_KEY) {
-  console.warn("API_KEY environment variable not set. Using a mock service.");
+  console.warn("API_KEY is not set. Using a mock service.");
 }
 
 const ai = API_KEY ? new GoogleGenAI({ apiKey: API_KEY }) : null;

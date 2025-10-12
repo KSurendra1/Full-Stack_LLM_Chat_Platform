@@ -2,8 +2,6 @@
 
 This is a complete, feature-rich chat platform powered by Large Language Models (LLMs). It features a modern, clean user interface and includes core functionalities like user authentication, persistent chat history, a credit-based usage system, and real-time notifications.
 
-
-
 ## ✨ Key Features
 
 - **Modern UI/UX:** A clean, responsive, and intuitive chat interface built with React and Tailwind CSS, inspired by leading AI platforms.
@@ -45,20 +43,20 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```bash
     npm install
     ```
-
-3.  **Set up environment variables:**
-    Create a `.env` file in the root of your project and add your Google Gemini API key.
-
-    ```
-    API_KEY=YOUR_GEMINI_API_KEY
-    ```
-    > **Note:** If the `API_KEY` is not provided, the application will run using a mock service, which returns pre-defined responses instead of making live API calls.
-
-4.  **Run the development server:**
+    
+3.  **Run the development server:**
     ```bash
     npm run dev
     ```
     The application should now be running on `http://localhost:5173` (or another port if 5173 is busy).
+
+## 🔑 API Key Configuration
+
+For simplicity in this demonstration, the Google Gemini API key is currently hardcoded in `src/services/geminiService.ts`.
+
+**⚠️ Security Warning:** This is **not secure** for a production environment. Do not commit your real API keys to version control. In a real-world application, you should use a backend proxy or a secure method for handling API keys on the client-side. For local development with frameworks like Vite or Next.js, you would typically use an environment variable (e.g., `VITE_GEMINI_API_KEY`) in a `.env` file.
+
+> **Note:** If the API key is removed from `geminiService.ts`, the application will fall back to using a mock service, which returns pre-defined responses instead of making live API calls.
 
 ## 📂 Project Structure
 
