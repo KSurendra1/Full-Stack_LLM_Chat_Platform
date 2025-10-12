@@ -1,0 +1,5 @@
+{
+  "name": "Full-Stack LLM Chat Platform",
+  "description": "A complete LLM-based chat platform with authentication, organization management, and credit-based chat functionality.",
+  "requestFramePermissions": []
+}
