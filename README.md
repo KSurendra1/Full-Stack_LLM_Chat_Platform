@@ -2,6 +2,8 @@
 
 This is a complete, feature-rich chat platform powered by Large Language Models (LLMs). It features a modern, clean user interface and includes core functionalities like user authentication, persistent chat history, a credit-based usage system, and real-time notifications.
 
+Live link : https://full-stack-llm-chat-platform-ebon.vercel.app/
+
 ## ✨ Key Features
 
 - **Modern UI/UX:** A clean, responsive, and intuitive chat interface built with React and Tailwind CSS, inspired by leading AI platforms.
